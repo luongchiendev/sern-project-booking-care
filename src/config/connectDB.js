@@ -6,6 +6,7 @@ const { Sequelize } = require('sequelize');
 const sequelize = new Sequelize('luongchiendev', 'root', null, {
     host: 'localhost',
     dialect: 'mysql',
+    logging: false
 });
 
 let connectDB = async () => {

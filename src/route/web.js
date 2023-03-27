@@ -4,7 +4,7 @@ import homeControllers from "../controllers/homeControllers";
 let router = express.Router();
 
 let initWebRoutes = (app) => {
-    router.get('/homepage', homeControllers.getHomePage);
+    router.get('/', homeControllers.getHomePage);
     router.get('/luongchiendev', (req, res) => {
         return res.send('Hello World, luongchiendev')
     })
